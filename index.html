@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Accordion</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/responsive-accordian.css">
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <ul class="accordian">
+      <li><a href="#" class="item-header">Home</a></li>
+      <li>
+          <span class="item-header">Sports</span>
+          <ul class="item-content">
+            <li><a href="#">Baseball</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Tennis</a></li>
+          </ul>
+      </li>
+      <li>
+          <span class="item-header">Bands</span>
+          <ul class="item-content">
+            <li><a href="#">Enya</a></li>
+            <li><a href="#">Flock of Seagulls</a></li>
+            <li><a href="#">Kenny G.</a></li>
+            <li><a href="#">Tears For Fears</a></li>
+          </ul>
+      </li>
+      <li><a href="#" class="item-header">Contact Us</a></li>
+    </ul>
+
+  </div> <!--! end of #container -->
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script defer src="js/responsive-accordian.js"></script>
+  <script>
+  // Initialize the accordian mode only on mobile/touch
+    $(function() {
+      $(".touch .accordian").accordian();
+    })
+  </script>
+
+</body>
+</html>
